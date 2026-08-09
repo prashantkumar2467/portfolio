@@ -1448,22 +1448,120 @@
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+   <!-- ================= FOOTER ================= -->
 
-    <footer class="border-t border-slate-800 px-6 py-8">
+    <footer class="relative overflow-hidden border-t border-slate-800 bg-slate-950 pt-16 pb-8">
 
-        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 md:flex-row">
+        <!-- Subtle Background Glow -->
+        <div class="absolute left-1/2 top-0 -z-10 h-48 w-full -translate-x-1/2 rounded-full bg-cyan-600/10 blur-3xl"></div>
 
-            <p class="text-sm text-slate-500">
-                © 2026 Prashant Kumar. All rights reserved.
-            </p>
+        <div class="mx-auto max-w-7xl px-6">
 
-            <p class="text-sm text-slate-500">
-                Built with
-                <span class="font-semibold text-blue-400">
-                    HTML + Tailwind CSS + JavaScript
-                </span>
-            </p>
+            <!-- "Open for Work" / Freelance Banner -->
+            <div class="mb-16 flex flex-col items-center justify-between gap-6 rounded-2xl bg-gradient-to-r from-blue-900/40 via-slate-800 to-cyan-900/40 border border-slate-700/50 p-8 shadow-xl shadow-cyan-500/5 md:flex-row md:p-10">
+                
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                        </span>
+                        <p class="text-sm font-bold uppercase tracking-wider text-green-400">Available for Hire</p>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-white sm:text-3xl">
+                        Looking for a Freelance Developer?
+                    </h3>
+                    <p class="mt-2 max-w-xl text-slate-400">
+                        I am currently <span class="font-semibold text-cyan-400">Open to Work</span>. Whether you need a full-stack application built from scratch or someone to join your team, let's chat!
+                    </p>
+                </div>
+
+                <a href="#contact" class="whitespace-nowrap rounded-xl bg-cyan-500 px-8 py-4 font-bold text-slate-950 transition duration-300 hover:-translate-y-1 hover:bg-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                    <i class="fa-solid fa-handshake mr-2"></i>
+                    Hire Me
+                </a>
+
+            </div>
+
+            <!-- Footer Main Content Grid -->
+            <div class="grid gap-12 border-b border-slate-800 pb-12 md:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Brand & About -->
+                <div class="lg:col-span-2">
+                    <a href="#home" class="text-2xl font-extrabold tracking-tight">
+                        <span class="text-blue-500">&lt;</span>
+                        Prashant
+                        <span class="text-blue-500">/&gt;</span>
+                    </a>
+                    <p class="mt-5 max-w-sm leading-7 text-slate-400">
+                        A dedicated Full Stack Developer passionate about building robust, user-friendly, and modern web applications. 
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white">Quick Links</h4>
+                    <ul class="mt-5 space-y-3">
+                        <li>
+                            <a href="#about" class="text-slate-400 transition hover:text-cyan-400 hover:underline hover:underline-offset-4">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="text-slate-400 transition hover:text-cyan-400 hover:underline hover:underline-offset-4">Featured Projects</a>
+                        </li>
+                        <li>
+                            <a href="#certifications" class="text-slate-400 transition hover:text-cyan-400 hover:underline hover:underline-offset-4">Certifications</a>
+                        </li>
+                        <li>
+                            <a href="resume/Prashant-Kumar-Resume.pdf" download class="text-slate-400 transition hover:text-cyan-400 hover:underline hover:underline-offset-4">Download Resume</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Socials -->
+                <div>
+                    <h4 class="text-lg font-bold text-white">Connect</h4>
+                    <div class="mt-5 space-y-3">
+                        <a href="mailto:prashantkr.2467@gmail.com" class="flex items-center gap-3 text-slate-400 transition hover:text-cyan-400">
+                            <i class="fa-solid fa-envelope"></i>
+                            prashantkr.2467@gmail.com
+                        </a>
+                        <p class="flex items-center gap-3 text-slate-400">
+                            <i class="fa-solid fa-location-dot text-cyan-400"></i>
+                            India
+                        </p>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="mt-6 flex gap-4">
+                        <a href="https://github.com/prashantkumar2467" target="_blank" aria-label="GitHub" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 border border-slate-800 text-slate-400 transition hover:border-white hover:text-white hover:bg-slate-800">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 border border-slate-800 text-slate-400 transition hover:border-blue-500 hover:text-blue-500 hover:bg-slate-800">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://t.me/+918544034109" target="_blank" aria-label="Telegram" class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 border border-slate-800 text-slate-400 transition hover:border-cyan-500 hover:text-cyan-500 hover:bg-slate-800">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Tech Stack -->
+            <div class="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
+                
+                <p class="text-sm text-slate-500">
+                    © <span id="currentYear">2026</span> Prashant Kumar. All rights reserved.
+                </p>
+
+                <p class="text-sm text-slate-500">
+                    Built with
+                    <span class="font-semibold text-blue-400">
+                        HTML + Tailwind CSS + JavaScript
+                    </span>
+                </p>
+
+            </div>
 
         </div>
 
